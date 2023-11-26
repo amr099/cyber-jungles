@@ -18,6 +18,7 @@
   --bg-clr: #131313;
   --violet: #99449f;
   --purple: #553a57;
+  overflow-x: hidden;
 }
 
 *,
@@ -28,13 +29,10 @@
   scroll-behavior: smooth;
 }
 
-html{
- overflow-x: hidden;
-}
-
 body {
   background-color: var(--bg-clr);
   color: #fff;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -56,7 +54,7 @@ h3 {
   font: 48px lexend-extrabold;
   color: #fff;
   margin-top: 10rem;
-  letter-spacing: -10px;
+  letter-spacing: -6px;
   text-transform: capitalize;
 }
 
@@ -170,6 +168,7 @@ section:not(.hero) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -288,24 +287,28 @@ section:not(.hero) {
   width: 49.5%;
 }
 .history .content1 {
-  background-image: url(./imgs/par-1.jpg);
+  background-image: url("./imgs/par-1.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .history .content2 {
-  background-image: url(./imgs/par-2.jpg);
+  background-image: url("./imgs/par-2.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .history .content3 {
-  background-image: url(./imgs/par-3.jpg);
+  background-image: url("./imgs/par-3.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .history .content4 {
-  background-image: url(./imgs/par-4.jpg);
+  background-image: url("./imgs/par-4.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .history .trans {
   display: flex;
@@ -357,6 +360,7 @@ section:not(.hero) {
 .cards .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 .cards img {
   width: 100%;
