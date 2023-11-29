@@ -248,12 +248,22 @@ section:not(.hero) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   row-gap: 4rem;
 }
 .characters .content > div {
   text-align: center;
+}
+.characters .char img {
+  margin-bottom: 1rem;
+  filter: brightness(70%);
+  transform: translateY(10px);
+  transform-origin: bottom;
+}
+.characters .char img:hover {
+  filter: brightness(100%);
+  transform: translateY(-10px);
 }
 .characters img {
   width: 100%;
@@ -334,10 +344,7 @@ section:not(.hero) {
   .history .row > * {
     width: 100%;
   }
-  .history .content1,
-  .history .content2,
-  .history .content3,
-  .history .content4 {
+  .history .row > div {
     padding: 1rem 3rem;
     background-image: none !important;
     background-color: transparent !important;
@@ -347,10 +354,7 @@ section:not(.hero) {
   }
 }
 @media (max-width: 769px) {
-  .history .content1,
-  .history .content2,
-  .history .content3,
-  .history .content4 {
+  .history .row > div {
     padding: 0.5rem;
   }
   .history .trans {
@@ -364,6 +368,13 @@ section:not(.hero) {
 }
 .cards img {
   width: 100%;
+  filter: brightness(70%);
+  transform: translateY(20px);
+  transform-origin: bottom;
+}
+.cards img:hover {
+  filter: brightness(100%);
+  transform: translateY(-20px);
 }
 
 @media (max-width: 1200px) {
@@ -413,31 +424,18 @@ section:not(.hero) {
     transform: translateY(-300px);
   }
 }
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) 50px;
-  grid-template-rows: repeat(2, 2fr);
-  gap: 1rem;
-  align-items: center;
+footer {
+  padding: 1rem 0;
 }
-footer .text {
-  grid-column: 1/3;
-  grid-row: 1/3;
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 footer .rights {
-  grid-column: 3/4;
-  grid-row: 1/3;
   text-align: center;
-}
-footer .socials {
-  grid-column: 4/6;
-  grid-row: 1/3;
-  justify-self: center;
-}
-footer .up {
-  grid-column: 6/7;
-  grid-row: 1/3;
-  justify-self: end;
 }
 footer span {
   color: var(--purple);
@@ -460,20 +458,8 @@ footer .up {
 }
 
 @media (max-width: 1200px) {
-  footer .text {
-    grid-row: 1/2;
-  }
   footer .rights {
-    grid-column: 1/3;
-    grid-row: 2/3;
     text-align: start;
-  }
-  footer .socials {
-    align-items: center;
-    grid-column: 3/6;
-  }
-  footer .socials img {
-    width: 30px;
   }
 }
 @media (max-width: 769px) {
