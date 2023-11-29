@@ -36,7 +36,6 @@ body {
     background-color: var(--bg-clr);
     color: #fff;
     font-family: sans-serif;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -167,6 +166,10 @@ a {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+main {
+    overflow-x: hidden;
 }
 
 section:not(.hero) {
