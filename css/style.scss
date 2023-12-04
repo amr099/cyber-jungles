@@ -3,19 +3,23 @@ $mobile: 769px;
 
 @font-face {
     font-family: detriot;
-    src: url(./font/Broken-Detroit\ -\ PERSONAL\ USE\ ONLY.ttf);
+    src: url(../font/Broken-Detroit\ -\ PERSONAL\ USE\ ONLY.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: lexend;
-    src: url(./font/Lexend_Giga/static/LexendGiga-Regular.ttf);
+    src: url(../font/Lexend_Giga/static/LexendGiga-Regular.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: lexend-semibold;
-    src: url(./font/Lexend_Giga/static/LexendGiga-SemiBold.ttf);
+    src: url(../font/Lexend_Giga/static/LexendGiga-SemiBold.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: lexend-extrabold;
-    src: url(./font/Lexend_Giga/static/LexendGiga-ExtraBold.ttf);
+    src: url(../font/Lexend_Giga/static/LexendGiga-ExtraBold.ttf);
+    font-display: swap;
 }
 
 :root {
@@ -33,9 +37,11 @@ $mobile: 769px;
 }
 
 body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: var(--bg-clr);
     color: #fff;
-    font-family: sans-serif;
+    font-family: lexend-extrabold, sans-serif;
 }
 
 h1 {
@@ -178,7 +184,7 @@ section:not(.hero) {
 
 .hero {
     position: relative;
-    background-image: url(./imgs/background.jpg);
+    background-image: url(../imgs/background.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -322,7 +328,7 @@ section:not(.hero) {
 
     @for $i from 1 through 4 {
         .content#{$i} {
-            background-image: url("./imgs/par-#{$i}.jpg");
+            background-image: url("../imgs/par-#{$i}.jpg");
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -473,14 +479,6 @@ footer {
     .up {
         width: 40px;
         height: 40px;
-    }
-}
-
-@media (max-width: $tablet) {
-    footer {
-        .rights {
-            text-align: start;
-        }
     }
 }
 
