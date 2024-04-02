@@ -1,22 +1,18 @@
 @font-face {
   font-family: detriot;
   src: url(../font/Broken-Detroit\ -\ PERSONAL\ USE\ ONLY.ttf);
-  font-display: swap;
 }
 @font-face {
   font-family: lexend;
   src: url(../font/Lexend_Giga/static/LexendGiga-Regular.ttf);
-  font-display: swap;
 }
 @font-face {
   font-family: lexend-semibold;
   src: url(../font/Lexend_Giga/static/LexendGiga-SemiBold.ttf);
-  font-display: swap;
 }
 @font-face {
   font-family: lexend-extrabold;
   src: url(../font/Lexend_Giga/static/LexendGiga-ExtraBold.ttf);
-  font-display: swap;
 }
 :root {
   --bg-clr: #131313;
@@ -37,7 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-clr);
   color: #fff;
-  font-family: lexend-extrabold, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -306,25 +302,25 @@ section:not(.hero) {
   width: 49.5%;
 }
 .history .content1 {
-  background-image: url("../imgs/par-1.jpg");
+  background-image: url("../imgs/par-1.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .history .content2 {
-  background-image: url("../imgs/par-2.jpg");
+  background-image: url("../imgs/par-2.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .history .content3 {
-  background-image: url("../imgs/par-3.jpg");
+  background-image: url("../imgs/par-3.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .history .content4 {
-  background-image: url("../imgs/par-4.jpg");
+  background-image: url("../imgs/par-4.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
